@@ -1,15 +1,19 @@
-import React from 'react';
-import styles from './index.less';
+import React from "react";
+import styles from "./index.less";
+import ProLayout from "@ant-design/pro-layout";
 
-export default (props) => {
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import ContentWrapper from "@/components/contentWrapper";
+
+export default props => {
   return (
     <div classnmae={styles.main}>
-      <header classnmae={styles.header}>header</header>
-        <content classnmae={styles.content}>
-            <sider classnmae={styles.sider}>sider</sider>
-            {props.children}
-        </content>
-      <footer classnmae={styles.footer}>footer</footer>
+      <Header styles={styles}></Header>
+      <ContentWrapper styles={styles}>
+        {props.children}
+      </ContentWrapper>
+      <Footer styles={styles}></Footer>
     </div>
   );
-}
+};

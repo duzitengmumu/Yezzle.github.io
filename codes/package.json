@@ -14,11 +14,14 @@
   "license": "ISC",
   "dependencies": {
     "@ant-design/icons": "^4.0.0-alpha.19",
+    "@ant-design/pro-layout": "^5.0.6",
     "antd": "^3.23.4",
     "classnames": "^2.2.6",
     "dva": "^2.4.0",
+    "marked": "^0.8.1",
     "moment": "^2.24.0",
     "numeral": "^2.0.6",
+    "react-magic": "^0.2.3",
     "react-router": "^4.3.1",
     "redux": "^4.0.1",
     "umi-request": "^1.0.0"
