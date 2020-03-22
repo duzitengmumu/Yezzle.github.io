@@ -23,3 +23,29 @@ export default `
 |---|---|---|
 |2017.3-2017.6 |Java实习生 |负责公司项目业务开发，编写业务代码，打包部署|
 `
+
+export const cssStyle = `
+.box{
+  width: 860px;
+  position: relative;
+  margin: auto;
+  /*避免闪烁分开写*/
+  padding-top: 20px;
+  padding-left: 10px;
+  left: 0;
+  right: 0;
+  background-color: beige;
+  min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5{
+  color: #f5c;
+}
+
+.box>ul{
+  list-style: none;
+}
+
+.box>table{
+  margin-left: 25px;
+}`

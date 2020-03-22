@@ -2,3 +2,28 @@
 .title {
   background: rgb(121, 242, 182);
 }
+/* 
+.box{
+  width: 860px;
+  position: relative;
+  margin: auto;
+  /*避免闪烁分开写*//*
+  padding-top: 20px;
+  padding-left: 10px;
+  left: 0;
+  right: 0;
+  background-color: beige;
+  min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5{
+  color: #f5c;
+}
+
+.box>ul{
+  list-style: none;
+}
+
+.box>table{
+  margin-left: 25px;
+} */
