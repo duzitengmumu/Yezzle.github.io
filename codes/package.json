@@ -7,15 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "umi dev",
     "ui": "set UMI_UI=1&&umi dev",
-    "build": "umi build && node ./scripts/deploy.js"
+    "build": "umi build && node ./scripts/deploy.js",
+    "analyze": "set ANALYZE=1&&umi build"
   },
   "keywords": [],
   "author": "yezzle",
   "license": "ISC",
   "dependencies": {
-    "@ant-design/icons": "^4.0.0-alpha.19",
     "@ant-design/pro-layout": "^5.0.6",
-    "antd": "^3.23.4",
+    "@umijs/plugin-antd": "^0.3.0",
+    "antd": "^4.0.4",
+    "antd-dayjs-webpack-plugin": "^0.0.9",
+    "babel-plugin-import": "^1.13.0",
     "classnames": "^2.2.6",
     "dva": "^2.4.0",
     "marked": "^0.8.1",

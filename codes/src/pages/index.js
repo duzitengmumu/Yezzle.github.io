@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Button } from "antd";
 import styles from './index.css'
 import marked from "marked";
 import { tickRender, renderMarked, createStyleElement, renderCss } from "@/utils/funcs"
@@ -24,6 +25,7 @@ export default function(){
   return (
     // <div className={styles.box} ref={setRef} >
     <div className='box' ref={ref}> 
+
     </div>
   )
 }
