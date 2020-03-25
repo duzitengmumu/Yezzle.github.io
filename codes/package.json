@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "umi dev",
-    "ui": "set UMI_UI=1&&umi dev",
     "build": "umi build && node ./scripts/deploy.js",
     "analyze": "set ANALYZE=1&&umi build"
   },
@@ -30,7 +29,6 @@
     "umi-request": "^1.0.0"
   },
   "devDependencies": {
-    "@umijs/preset-ui": "^2.0.7",
     "umi": "^3.0.7"
   }
 }
