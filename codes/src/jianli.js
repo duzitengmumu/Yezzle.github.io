@@ -11,7 +11,7 @@ export default `
 0. 熟练掌握**H5、CSS3、ES6**等基本知识
 0. 熟练使用不同主流的UI框架：**ElementUI、Antd**
 0. 掌握前端主流开发框架: **React**全家桶、**Vue**全家桶，掌握其原理
-0. 了解微信**小程序**开发，有自己的微信小程序
+0. 了解微信**小程序**开发，了解ssr及其原理
 0. 熟悉后端语言**Java、 node.js**，熟悉数据库操作，有**express**实践经验
 0. 熟练使用前端构建工具**webpack、gulp**，做过打包优化
 0. 熟悉原生安卓开发、**electron**桌面应用开发
@@ -55,26 +55,58 @@ export default `
 ## 自我评价
 
 0. 喜欢钻研前端技术，经常翻阅前端主流社区学习(github,掘金,简书,b站)
+0. 热爱前端技术，思维活跃，学习动手能力强，有一定的抗压能力
+0. 性格随和，诚恳稳重，能很快适应新环境
+0. 工作认真负责，并连续两年获得公司年度优秀员工的评价
 0. 最近开始写[简书博客(https://www.jianshu.com/u/4d1af407cc51)](https://www.jianshu.com/u/4d1af407cc51)、
 [简历主页(https://main.zyidy.cn)](https://main.zyidy.cn)
-0. 热爱前端技术，思维活跃，学习能力强，有一定的抗压能力, 并连续获得两次公司年度优秀员工的评价
-0. 性格随和，诚恳稳重，能很快适应新环境
 
-[github主页(https://github.com/Yezzle/Yezzle.github.io)](https://github.com/Yezzle/Yezzle.github.io)
+[github仓库查看(Yezzle/Yezzle.github.io)](https://github.com/Yezzle/Yezzle.github.io)
 `
 
 export const cssStyles = `
 .box{
   transition: linear all 0.5s;
-  width: 860px;
+  width: 880px;
   position: relative;
   margin: auto;
-  padding: 20px 10px;
+  padding: 2em 2em;
   left: 0;
   right: 0;
   background-color: beige;
   min-height: 100vh;
   border-radius: 2px;
+}
+
+@media (max-width: 900px){
+  .box{
+    width: 100%;
+  }
+}
+
+ul,ol{
+  transition: padding ease 0.5s;
+  padding-left: 1em;
+}
+
+table{
+  margin-bottom: 1em;
+}
+
+p>strong{
+  position: relative;
+  color: #f5c;
+  margin-left: 1em;
+}
+
+p>strong::before{
+  content: '';
+  width: .3em;
+  height: .3em;
+  background-color: #f5c;
+  position: absolute;
+  top: 50%;
+  transform: translate(-150%, -50%);
 }
 
 h1,h2,h3,h4,h5{
@@ -86,5 +118,5 @@ h1,h2,h3,h4,h5{
 }
 
 .box>table{
-  margin-left: 25px;
-}`
+  margin-left: 1em;
+} `

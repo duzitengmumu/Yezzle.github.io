@@ -31,6 +31,7 @@ export function renderMarked(content, element, options) {
   let domStr = marked(marked(content, options))
   let vNode = stringToVNode(domStr)
   compareTowVnode(element.vNode, vNode, element)
+  element.scrollIntoView({behavior: "instant", block: "end", inline: "nearest"})
 }
 
 export function renderCss(content, element) {

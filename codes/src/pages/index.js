@@ -1,7 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Button } from "antd";
-import styles from './index.css'
-import marked from "marked";
 import { tickRender, renderMarked, createStyleElement, renderCss } from "@/utils/funcs"
 import data, { cssStyles } from '@/jianli.js'
 
@@ -12,20 +9,20 @@ export default function(){
   useEffect(() => {
     if(!ref) return;
     const styleElement = createStyleElement()
+    // 开发时放开这两行
     // ref.current.innerHTML = marked(data)
     // styleElement.innerHTML = cssStyles
 
     tickRender(data, renderMarked, 20 , ref.current ).then(()=>{
       console.log('渲染完成')
     })
-    tickRender(cssStyles, renderCss, 80, styleElement)
+    tickRender(cssStyles, renderCss, 20, styleElement)
     
   }, [])
 
   return (
-    // <div className={styles.box} ref={setRef} >
+    // <div className={styles.box} ref={ref} >
     <div className='box' ref={ref}> 
-
-    </div>
+  </div>
   )
 }

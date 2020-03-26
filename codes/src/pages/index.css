@@ -5,15 +5,46 @@
 
 .box{
   transition: linear all 0.5s;
-  width: 860px;
+  width: 880px;
   position: relative;
   margin: auto;
-  padding: 20px 10px;
+  padding: 2em 2em;
   left: 0;
   right: 0;
   background-color: beige;
   min-height: 100vh;
   border-radius: 2px;
+}
+
+@media (max-width: 900px){
+  .box{
+    width: 100%;
+  }
+}
+
+ul,ol{
+  transition: padding ease 0.5s;
+  padding-left: 1em;
+}
+
+table{
+  margin-bottom: 1em;
+}
+
+p>strong{
+  position: relative;
+  color: #f5c;
+  margin-left: 1em;
+}
+
+p>strong::before{
+  content: '';
+  width: .3em;
+  height: .3em;
+  background-color: #f5c;
+  position: absolute;
+  top: 50%;
+  transform: translate(-150%, -50%);
 }
 
 h1,h2,h3,h4,h5{
@@ -25,5 +56,5 @@ h1,h2,h3,h4,h5{
 }
 
 .box>table{
-  margin-left: 25px;
+  margin-left: 2em;
 } 
