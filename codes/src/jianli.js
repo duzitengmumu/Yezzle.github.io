@@ -78,25 +78,20 @@ export const cssStyles = `
   border-radius: 2px;
 }
 
-@media (max-width: 900px){
-  .box{
-    width: 100%;
-  }
-}
+@media (max-width: 900px){.box{width: 100%;}}
 
-ul,ol{
-  transition: padding ease 0.5s;
-  padding-left: 1em;
-}
+ul,ol{transition: padding ease 0.5s;}
 
-table{
-  margin-bottom: 1em;
-}
+ul{padding-left: 1em;list-style: none;}
+
+ol{padding-left: 2em;}
+
+table{margin-bottom: 1em;}
 
 p>strong{
   position: relative;
   color: #f5c;
-  margin-left: 1em;
+  margin-left: 1.3em;
 }
 
 p>strong::before{
@@ -106,17 +101,11 @@ p>strong::before{
   background-color: #f5c;
   position: absolute;
   top: 50%;
-  transform: translate(-150%, -50%);
+  transform: translate(-180%, -50%);
 }
-
 h1,h2,h3,h4,h5{
   color: #f5c;
 }
-
-.box>ul{
-  list-style: none;
-}
-
 .box>table{
   margin-left: 1em;
 } `

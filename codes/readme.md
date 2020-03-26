@@ -1,5 +1,12 @@
 gh主页直接放在master分支了，就懒得用gh-page分支发布了
 
+## 技术栈
+
+* umijs
+* react
+* antd
+* markedjs
+
 ## 使用方法
 
 ```bash
@@ -12,7 +19,7 @@ yarn
 yarn dev
 ```
 
-## 说明
+## 优化说明
 
 使用umijs搭建的项目快速开发，
 进行了以下内容优化
