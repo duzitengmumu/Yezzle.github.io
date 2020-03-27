@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { tickRender, renderMarked, createStyleElement, renderCss } from "@/utils/funcs"
 import data, { cssStyles } from '@/jianli.js'
+import { createAnimateRenderMarked } from '../utils/funcs'
 
 export default function(){
 
@@ -13,7 +14,7 @@ export default function(){
     // ref.current.innerHTML = marked(data)
     // styleElement.innerHTML = cssStyles
 
-    tickRender(data, renderMarked, 20 , ref.current ).then(()=>{
+    tickRender(data, createAnimateRenderMarked(renderMarked, ref.current), 20 , ref.current ).then(()=>{
       console.log('渲染完成')
     })
     tickRender(cssStyles, renderCss, 20, styleElement)

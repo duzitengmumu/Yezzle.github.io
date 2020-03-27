@@ -31,7 +31,15 @@ export function renderMarked(content, element, options) {
   let domStr = marked(marked(content, options))
   let vNode = stringToVNode(domStr)
   compareTowVnode(element.vNode, vNode, element)
-  element.scrollIntoView({behavior: "instant", block: "end", inline: "nearest"})
+  // element.scrollIntoView({behavior: "instant", block: "end", inline: "nearest"})
+}
+
+export function createAnimateRenderMarked(renderMarked, element, speed){
+  const animateScroll = createAnimateScroll(element, speed||1)
+  return function(content, element, options){
+    renderMarked(content, element, options)
+    animateScroll()
+  }
 }
 
 export function renderCss(content, element) {
@@ -59,4 +67,29 @@ function domToVnode(dom){
     })
   }
   return {nodeType, nodeName, innerText, childElementCount, childNodes, nodeValue, vDom: dom}
+}
+
+export function createAnimateScroll(element,speed) {
+  let requestId;
+
+  return function(){
+    //获取元素相对窗口的top值，此处应加上窗口本身的偏移
+    let rect=element.getBoundingClientRect();
+    let currentTop = window.pageYOffset+window.innerHeight;
+    if(requestId){
+      cancelAnimationFrame(requestId)
+      requestId = null;
+    }
+    //采用requestAnimationFrame，平滑动画
+    function step(timestamp) {
+      currentTop+=speed;
+      window.scrollBy(0, speed)
+      if(currentTop<=rect.height){
+        requestId=window.requestAnimationFrame(step);
+      }else{
+        window.cancelAnimationFrame(requestId);
+      }
+    }
+    window.requestAnimationFrame(step);
+  }
 }
