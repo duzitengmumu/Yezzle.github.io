@@ -2,20 +2,20 @@ export default `
 # 求职意向: 前端开发工程师
 ---
 ## 基本信息
-  + 姓名: Yezzle &nbsp;&nbsp;   毕业院校：中国地质大学
-  + 年龄: 26  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系电话：13409776570
-  + 专业：测绘工程
+  + 姓名: Yezzle &nbsp;&nbsp;   毕业院校: 中国地质大学
+  + 年龄: 26  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系电话: 13409776570
+  + 专业: 测绘工程&nbsp; 邮箱: yezle.qq.com
 
 ## 技能
 
-0. 熟练掌握**H5、CSS3、ES6**等基本知识
-0. 熟练使用不同主流的UI框架：**ElementUI、Antd**
-0. 掌握前端主流开发框架: **React**全家桶、**Vue**全家桶，掌握其原理
-0. 了解微信**小程序**开发，了解ssr及其原理
+0. 熟练掌握**H5、CSS3、ES6**等基本知识, 面向对象思想，能使用**typescript**开发
+0. 熟练使用不同主流的UI框架**ElementUI、Antd、JQuery**和基础组件的封装
+0. 掌握前端主流开发框架: **React**全家桶、**Vue**全家桶，包括redux, dva, mobx, react-router, vuex, vue-router掌握其原理
+0. 熟悉微信**小程序**开发，熟悉ssr框架，包括**nuxt, next**
 0. 熟悉后端语言**Java、 node.js**，熟悉数据库操作，有**express**实践经验
-0. 熟练使用前端构建工具**webpack、gulp**，做过打包优化
-0. 熟悉原生安卓开发、**electron**桌面应用开发
-0. 熟悉**linux**操作系统、熟练使用**docker**
+0. 熟练使用前端构建工具**webpack、gulp**，有打包优化经验
+0. 熟练使用代码管理工具git、svn, 熟练使用chrome调试工具
+0. 熟悉**linux**操作系统、熟练使用**docker**，熟悉原生安卓开发、**electron**桌面应用开发
 
 ## 工作经历
 
@@ -28,7 +28,7 @@ export default `
 
 ## 项目经验
 
- **编玩边学学生端** 技术栈: Vue全家桶、webpack、happypack
+ **编玩边学学生端** 技术栈: Vue全家桶、webpack、happypack、elementUI
  + 项目描述： 使用vue-cli搭建的web应用，学生端上课系统入口。
  功能主要包括学生登录，新课程发布上课提醒和考试/上课入口以及学习情况展示等
 
