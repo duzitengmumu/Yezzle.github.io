@@ -3,7 +3,7 @@ export default `
 ---
 ## 基本信息
   + 姓名: 张烨 &nbsp;&nbsp;   学历: 中国地质大学(武汉) 本科
-  + 年龄: 26  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专业: 测绘工程
+  + 年龄: 26  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作经验：3年
   + 邮箱: yezle.qq.com&nbsp; 联系电话: 13409776570
 
 ## 技能
